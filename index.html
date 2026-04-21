@@ -1566,6 +1566,13 @@ function applyLanguage(lang) {
   }
  }
 
+ .hero-title.lang-ua {
+  font-size: clamp(1.8rem, 11vw, 5.5rem);
+  letter-spacing: -0.01em;
+  white-space: nowrap;
+}
+ } 
+
 langBtn.addEventListener('click', () => {
   langIdx = (langIdx + 1) % langs.length;
   applyLanguage(langs[langIdx]);
